@@ -1,0 +1,21 @@
+{
+  "ConnectionStrings": {
+    "AzureWebJobsVideoStorage": "[Blob storage account Connection String]"
+  },
+  "IsEncrypted": false,
+  "Values": {
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet",
+    "VideoBlobAccountName": "[Blob Storage Account Name]",
+    "VideoBlobContainerName": "[Blob Storage Video Container Name]",
+    "VideoIndexDataContainerName": "[Blob Storage Data Container Name]",
+    "VideoBlobKey": "[Blob Storage Account Key]",
+    "VideoIndexerCheckStatusPollingInterval": 15,
+    "VideoIndexerChechStatusExpiryTime": 2,
+    "VideoIndexerApiUrl": "https://api.videoindexer.ai",
+    "VideoIndexerLocation": "trial",
+    "VideoIndexerAccountId": "[Video Indexer Account ID]",
+    "VideoIndexerApiKey": "[Video Indexer Api Key]",
+    "VideoIndexerLanguage": "it-IT"
+  }
+}

@@ -90,7 +90,7 @@ namespace VideoIndexerUploader
                 conStr = System.Environment.GetEnvironmentVariable($"CUSTOMCONNSTR_AzureWebJobsVideoStorage", EnvironmentVariableTarget.Process);
 
             // Create a BlobServiceClient object which will be used to create a container client
-            BlobServiceClient blobServiceClient = new BlobServiceClient("DefaultEndpointsProtocol=https;AccountName=holomaintenancestorage;AccountKey=MCmK0JzA9bqqgWOgGkrJVEhtpHuK6n5yPv0whYyAP8/nEokD9tyVC56twAVMlLgP/M+rFqkumDsstZTq8sNu6w==;EndpointSuffix=core.windows.net");
+            BlobServiceClient blobServiceClient = new BlobServiceClient(conStr);
 
             //Create a unique name for the container
             string containerName = Environment.GetEnvironmentVariable("VideoIndexDataContainerName");
